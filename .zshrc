@@ -8,8 +8,8 @@ alias mf0="sudo legion_cli maximumfanspeed-disable"
 function cls { find ${1:-.} -maxdepth 1 -printf "%m:%f\n" }
 eval "$(zoxide init --cmd cd zsh)"
 eval "fastfetch"
-export MODULAR_HOME="/home/jjh/.modular"
-export PATH="/home/jjh/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
+export MODULAR_HOME="~/.modular"
+export PATH="~/.modular/pkg/packages.modular.com_mojo/bin:$PATH"
 eval "$(direnv hook zsh)"
 
 # fzf integration
