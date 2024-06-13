@@ -1,9 +1,11 @@
 alias ni="vim /etc/nixos/configuration.nix"
 alias fim="vi /etc/nixos/flake.nix"
-alias switch="sh ~/dotfiles/switch.sh"
+alias fenv="nix flake new -t github:nix-community/nix-direnv ."
+alias sw="sh ~/dotfiles/switch.sh"
 alias sf="sh ~/dotfiles/sf.sh"
 alias mf1="sudo legion_cli maximumfanspeed-enable"
 alias mf0="sudo legion_cli maximumfanspeed-disable"
+alias ls="eza"
 #function cls() { ls -l ${1} | awk '{k=0;for(i=0;i<=8;i++)k+=((substr($1,i+2,1)~/[rwx]/) *2^(8-i));if(k)printf("%0o ",k);print}'; }
 function cls { find ${1:-.} -maxdepth 1 -printf "%m:%f\n" }
 eval "$(zoxide init --cmd cd zsh)"
